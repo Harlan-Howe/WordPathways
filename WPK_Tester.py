@@ -1,12 +1,12 @@
 import unittest
-
+import logging
 from WordPathKeeperFile import WordPathKeeper
 
 class MyTestCase(unittest.TestCase):
 
     def test_1_num_mismatched(self):
         my_WPK = WordPathKeeper()
-
+        logging.info("Testing num mismatched.")
         # TODO: Write some appropriate tests to make sure that my_WPK.num_mismatched_letters() is working correctly.
         #  You might use "self.assertTrue()", "self.assertFalse()", "self.assertEqual()" or other methods that you have
         #  seen in previous unittests.

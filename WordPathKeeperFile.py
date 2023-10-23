@@ -3,6 +3,16 @@ from tkinter import Tk
 from copy import deepcopy
 from typing import TypeVar, List
 
+import logging
+
+logging.basicConfig(level=logging.INFO)  # simple version to the output console
+
+
+# logging.basicConfig(level=logging.DEBUG, filename=f"log {datetime.datetime.now():%m-%d@%H:%M:%S}.txt",
+# format="%(asctime)s %(levelname)s %(message)s",
+# datefmt="%H:%M:%S %p --- ")  # more robust, sent to a file called log.txt in your project
+
+
 #TODO: The edges in your graph will represent connections between two words that differ by one letter. You need to
 # decide whether you want these edges to be pairs of the words themselves or the indices of them in the list of
 # vertices. There is no right or wrong choice here - its up to you. (There is some speed/memory usage) tradeoff.
